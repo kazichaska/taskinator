@@ -254,12 +254,13 @@ var loadTasks = function() {
     
     // parse into array of objects
     savedTasks = JSON.parse(savedTasks);
-    console.log(savedTasks);
+    // console.log(savedTasks);
+    
     // loop through savedTasks array
     for (var i = 0; i < savedTasks.length; i++) {
         // pass each task object into the `createTaskEl()` function
         createTaskEl(savedTasks[i]);
-        console.log(tasks[i]);
+        // console.log(tasks[i]);
     }
 };
 
